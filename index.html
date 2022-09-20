@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grandP">
+      <nav id="nav">
+        <h3>Ahmed</h3>
+        <ul class="menu">
+          <li>
+            <a href="index.html"
+              ><i class="fa-regular fa-chart-bar"></i><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-user"></i><span>Profile</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-diagram-project"></i
+              ><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-user-group"></i><span>Friends</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-file"></i><span>Files</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-sharp fa-solid fa-clipboard"></i
+              ><span>Plans</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <header class="head">
+          <div class="handle">
+            <input type="text" placeholder="Search Keyword" />
+          </div>
+          <div class="ntf">
+            <span><i class="fa-regular fa-bell"></i></span>
+            <img src="imgs/user.jpg" alt="user" class="si-s-b-circle" />
+          </div>
+        </header>
+        <main>
+          <h1 class="h">Dashboard</h1>
+          <div class="parent">
+            <!--START OF welcome-->
+            <div class="box" id="wBox">
+              <div id="welcome">
+                <div>
+                  <h2>Welcome</h2>
+                  <p style="font-size: 17px">Ahmed</p>
+                </div>
+                <img
+                  src="imgs/dashboard.png"
+                  alt="Dashboard"
+                  width="200"
+                  height="200"
+                />
+                <img
+                  src="imgs/user.jpg"
+                  alt="user"
+                  class="si-m-b-circle special"
+                />
+              </div>
+              <div id="info">
+                <div>
+                  <h4>Ahmed Mohammed</h4>
+                  <p>Developer</p>
+                </div>
+                <div>
+                  <h4>80</h4>
+                  <p>Projects</p>
+                </div>
+                <div>
+                  <h4>$5800</h4>
+                  <p>Earned</p>
+                </div>
+              </div>
+              <button
+                class="s-btn-c-blue"
+                style="float: right; margin-top: 10px"
+              >
+                Profile
+              </button>
+            </div>
+            <!--END welcome-->
+            <!--START OF quick draft-->
+            <div class="box qdraft">
+              <h2 class="gap">Quick Draft</h2>
+              <p class="mop">Write A Draft For Your Idea</p>
+              <form action="">
+                <input type="text" placeholder="Title" />
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Your Thought"
+                  cols="50"
+                  rows="10"
+                ></textarea>
+                <div>
+                  <button class="s-btn-c-blue">Save</button>
+                </div>
+              </form>
+            </div>
+            <!--END OF quick draft-->
+            <!--START OF yearly target-->
+            <div class="box target">
+              <h2 class="gap">Yearly target</h2>
+              <p class="mop">Targets Of The Year With Progress</p>
+              <div class="pdet one">
+                <span><i class="fa-solid fa-dollar-sign"></i></span>
+                <div class="det">
+                  <p class="mop">Money</p>
+                  <p><strong>$20.000</strong></p>
+                  <div class="percent"><div data-width="40%"></div></div>
+                </div>
+              </div>
+              <div class="pdet two">
+                <span><i class="fa-solid fa-code"></i></span>
+                <div class="det">
+                  <p>Projects</p>
+                  <p><strong>24</strong></p>
+                  <div class="percent"><div data-width="55%"></div></div>
+                </div>
+              </div>
+              <div class="pdet three">
+                <span><i class="fa-regular fa-user"></i></span>
+                <div class="det">
+                  <p>Team</p>
+                  <p><strong>12</strong></p>
+                  <div class="percent"><div data-width="75%"></div></div>
+                </div>
+              </div>
+            </div>
+            <!--END OF yearly target-->
+            <!--START OF statistics box-->
+            <div class="box">
+              <h2 class="gap">Tickets Statistics</h2>
+              <p class="mop">Targets Of The Year With Progress</p>
+              <div id="std">
+                <div>
+                  <i class="fa-regular fa-rectangle-list"></i>
+                  <strong>2500</strong>
+                  <p class="mop">Total</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-spinner"></i>
+                  <strong>2500</strong>
+                  <p class="mop">Pending</p>
+                </div>
+                <div>
+                  <i class="fa-regular fa-circle-check"></i>
+                  <strong>2500</strong>
+                  <p class="mop">Closed</p>
+                </div>
+                <div>
+                  <i class="fa-regular fa-rectangle-xmark"></i>
+                  <strong>2500</strong>
+                  <p class="mop">Deleted</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF statistics box-->
+            <!--START OF latest news-->
+            <div class="box">
+              <h2 class="gap">Latest News</h2>
+              <div class="pDetail">
+                <i
+                  class="fa-brands fa-sass newsIcon"
+                  style="color: #c76494"
+                ></i>
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Created SASS Section</h4>
+                    <p class="mop">New SASS Examples & Tutorials</p>
+                  </div>
+                  <strong class="count">3 Days Ago</strong>
+                </div>
+              </div>
+              <div class="pDetail">
+                <i
+                  class="fa-solid fa-shapes newsIcon"
+                  style="color: #ff8300"
+                ></i>
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Changed The Design</h4>
+                    <p class="mop">A Brand New Website Design</p>
+                  </div>
+                  <strong class="count">5 Days Ago</strong>
+                </div>
+              </div>
+              <div class="pDetail">
+                <i
+                  class="fa-solid fa-people-group newsIcon"
+                  style="color: #f8493f"
+                ></i>
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Team Increased</h4>
+                    <p class="mop">5 Developers joined The Team</p>
+                  </div>
+                  <strong class="count">5 Days Ago</strong>
+                </div>
+              </div>
+              <div class="pDetail">
+                <i
+                  class="fa-solid fa-credit-card newsIcon"
+                  style="color: var(--mainColor)"
+                ></i>
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Added Payment Getway</h4>
+                    <p class="mop">Many New Payment Getways Added</p>
+                  </div>
+                  <strong class="count">5 Days Ago</strong>
+                </div>
+              </div>
+            </div>
+            <!--END OF latest news-->
+            <!--START OF latest tasks-->
+            <div class="box">
+              <h2 class="gap">Latest Tasks</h2>
+              <div class="task">
+                <div class="taskN">
+                  <h4>Record One New Video</h4>
+                  <p class="mop">Record Python Create Exe Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <div class="task">
+                <div class="taskN">
+                  <h4>Write Article</h4>
+                  <p class="mop">Write Low Level Vs Level Languages</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <div class="task">
+                <div class="taskN">
+                  <h4>Finish Project</h4>
+                  <p class="mop">Publish Academy Programming Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <div class="task">
+                <div class="taskN">
+                  <h4 style="opacity: 0.4; text-decoration: line-through">
+                    Attend The Meeting
+                  </h4>
+                  <p style="opacity: 0.4; text-decoration: line-through">
+                    Attend The Project Business Analysis Meeting
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can" style="opacity: 0.4"></i>
+              </div>
+              <div class="task">
+                <div class="taskN">
+                  <h4>Record One New Video</h4>
+                  <p class="mop">Record Python Create Exe Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+            </div>
+            <!--END OF latest tasks-->
+            <!--START OF top search items-->
+            <div class="box">
+              <h2 class="gap">Top Search Items</h2>
+              <div style="margin-bottom: 10px" class="Pnames">
+                <p class="mop">Keyword</p>
+                <p class="mop">Search Count</p>
+              </div>
+              <div class="Pnames detail">
+                <p><strong>Programming</strong></p>
+                <p class="count"><strong>220</strong></p>
+              </div>
+              <div class="Pnames detail">
+                <p><strong>JavaScript</strong></p>
+                <p class="count"><strong>180</strong></p>
+              </div>
+              <div class="Pnames detail">
+                <p><strong>PHP</strong></p>
+                <p class="count"><strong>160</strong></p>
+              </div>
+              <div class="Pnames detail">
+                <p><strong>Code</strong></p>
+                <p class="count"><strong>145</strong></p>
+              </div>
+              <div class="Pnames detail">
+                <p><strong>Design</strong></p>
+                <p class="count"><strong>110</strong></p>
+              </div>
+              <div class="Pnames detail">
+                <p><strong>Logic</strong></p>
+                <p class="count"><strong>95</strong></p>
+              </div>
+            </div>
+            <!--END OF top search items-->
+            <!--START OF latest uploads-->
+            <div class="box">
+              <h2 class="gap">Latest Uploads</h2>
+              <div class="pDetail">
+                <img src="imgs/pdf.png" alt="pdf" class="fileImg" />
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Pdf File.pdf</h4>
+                    <p class="mop">Ahmed</p>
+                  </div>
+                  <strong class="count">2.9mb</strong>
+                </div>
+              </div>
+              <div class="pDetail">
+                <img src="imgs/pdf.png" alt="pdf" class="fileImg" />
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Course File.pdf</h4>
+                    <p class="mop">Ahmed</p>
+                  </div>
+                  <strong class="count">5mb</strong>
+                </div>
+              </div>
+              <div class="pDetail">
+                <img src="imgs/pdf.png" alt="pdf" class="fileImg" />
+                <div class="Detail">
+                  <div class="upload">
+                    <h4>Lesson File.pdf</h4>
+                    <p class="mop">Ahmed</p>
+                  </div>
+                  <strong class="count">10mb</strong>
+                </div>
+              </div>
+            </div>
+
+            <!--END OF latest uploads-->
+            <!--START OF cuurent project progress-->
+            <div class="box">
+              <h2 class="gap">Current Project Progress</h2>
+              <ul id="progress">
+                <li>
+                  <div class="outerC"><div class="innerC"></div></div>
+                  Got The Project
+                </li>
+                <li>
+                  <div class="outerC"><div class="innerC"></div></div>
+                  Started The Project
+                </li>
+                <li>
+                  <div class="outerC"><div class="innerC"></div></div>
+                  The Project About To Finish
+                </li>
+                <li>
+                  <div class="outerC">
+                    <div class="innerC" id="special"></div>
+                  </div>
+                  Test The Project
+                </li>
+                <li>
+                  <div class="outerC">
+                    <div class="innerC" style="opacity: 0"></div>
+                  </div>
+                  Finish The Project & Get Money
+                </li>
+              </ul>
+            </div>
+            <!--END OF  cuurent project progress-->
+            <!--START OF reminders-->
+            <div class="box" id="reminder">
+              <h2 class="gap">Reminders</h2>
+              <div>
+                <p style="font-weight: 700">Check My Tasks List</p>
+                <p>28/09/2022 - 12:00am</p>
+              </div>
+              <div>
+                <p style="font-weight: 700">Check My Projects</p>
+                <p>26/10/2022 - 12:00am</p>
+              </div>
+              <div>
+                <p style="font-weight: 700">Call All My Clients</p>
+                <p>5/11/2022 - 12:00am</p>
+              </div>
+              <div>
+                <p style="font-weight: 700">Finish The Development Workshop</p>
+                <p>20/12/2022 - 12:00am</p>
+              </div>
+            </div>
+            <!--END OF reminders-->
+            <!--START OF latest posts-->
+            <div class="box">
+              <h2 class="gap">Latest Post</h2>
+              <img
+                src="imgs/user.jpg"
+                alt="user"
+                class="si-s-b-circle"
+                style="width: 35px; height: 35px"
+              />
+              <div
+                style="
+                  display: inline-block;
+                  line-height: 1.3;
+                  margin-left: 10px;
+                "
+              >
+                <p style="opacity: 1"><strong>Ahmed Morsy</strong></p>
+                <p class="mop">About 3 Hours Ago</p>
+              </div>
+              <p class="comment">
+                To success, Don't look for people's disappointing comments about
+                thing or practise you love.
+              </p>
+              <div class="l-c">
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                  <span>2.7K</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>600</span>
+                </div>
+              </div>
+            </div>
+            <!--START OF social media-->
+            <div class="box">
+              <h2 class="gap">Social Media Stats</h2>
+              <div class="socialP">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <div class="social">
+                  <p>90K Followers</p>
+                  <button class="s-btn-c-blue">Follow</button>
+                </div>
+              </div>
+              <div class="socialP">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <div class="social">
+                  <p>2M Like</p>
+                  <button class="s-btn-c-blue">Like</button>
+                </div>
+              </div>
+              <div class="socialP">
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <div class="social">
+                  <p>1M subs</p>
+                  <button class="s-btn-c-blue">Subscribe</button>
+                </div>
+              </div>
+              <div class="socialP">
+                <span><i class="fa-brands fa-linkedin"></i></span>
+                <div class="social">
+                  <p>70K Followers</p>
+                  <button class="s-btn-c-blue">Follow</button>
+                </div>
+              </div>
+            </div>
+            <!--END OF social media-->
+            <div class="box" id="wide">
+              <h2>Projects</h2>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
