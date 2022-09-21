@@ -1,39 +1,9 @@
-/* second half*/
-.main main {
-  padding: 15px;
-}
-.parent {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 350px);
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 15px;
-}
-.box {
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-}
-.box h2 {
-  font-weight: 800;
-}
-.box .mop {
-  margin-bottom: 5px;
-  opacity: 0.6;
-}
-.box {
-  padding: 15px;
-}
-.gap {
-  margin-bottom: 15px;
-}
 /*START OF welcome*/
 #wBox {
   position: relative;
   background-image: linear-gradient(
     to bottom,
-    var(--secondMainColor) 0% 55%,
+    var(--greyColorAlt) 0% 55%,
     white 55% 100%
   );
 }
@@ -55,7 +25,7 @@
   padding: 5px;
   width: calc(100% + 30px);
   transform: translateX(-15px);
-  border: 1px solid var(--secondMainColor);
+  border: 1px solid var(--greyColorAlt);
   border-left-color: transparent;
   border-right-color: transparent;
   justify-content: space-around;
@@ -74,7 +44,6 @@
 .qdraft input,
 .qdraft textarea {
   background-color: #eeeeee;
-  padding: 5px;
 }
 .qdraft form textarea {
   resize: none;
@@ -95,13 +64,13 @@
   flex-grow: 1;
 }
 .one span i {
-  color: blue;
+  color: var(--blueColorAlt);
 }
 .two span i {
-  color: orange;
+  color: var(--orangeColorAlt);
 }
 .three span i {
-  color: green;
+  color: var(--greenColorAlt);
 }
 .one span {
   background-color: #cae3ff;
@@ -137,17 +106,17 @@
 .one .percent::before {
   content: "40%";
   left: 40%;
-  background-color: blue;
+  background-color: var(--blueColorAlt);
 }
 .two .percent::before {
   content: "55%";
   left: 55%;
-  background-color: orange;
+  background-color: var(--orangeColorAlt);
 }
 .three .percent::before {
   content: "75%";
   left: 75%;
-  background-color: green;
+  background-color: var(--greenColorAlt);
 }
 .det .percent::before {
   bottom: calc(100% + 10px);
@@ -175,13 +144,13 @@
   transition: 0.5s;
 }
 .one .percent div {
-  background-color: blue;
+  background-color: var(--blueColorAlt);
 }
 .two .percent div {
-  background-color: orange;
+  background-color: var(--orangeColorAlt);
 }
 .three .percent div {
-  background-color: green;
+  background-color: var(--greenColorAlt);
 }
 .det .percent::after {
   content: "";
@@ -192,15 +161,15 @@
 }
 .one .percent::after {
   left: 40%;
-  border-top-color: blue;
+  border-top-color: var(--blueColorAlt);
 }
 .two .percent::after {
   left: 55%;
-  border-top-color: orange;
+  border-top-color: var(--orangeColorAlt);
 }
 .three .percent::after {
   left: 75%;
-  border-top-color: green;
+  border-top-color: var(--greenColorAlt);
 }
 /*END OF yearly target*/
 /* statistics box*/
@@ -230,16 +199,16 @@
   font-size: 15px;
 }
 #std div:first-child i {
-  color: orange;
+  color: var(--orangeColorAlt);
 }
 #std div:nth-child(2) i {
-  color: var(--mainColor);
+  color: var(--blueColorAlt);
 }
 #std div:nth-child(3) i {
-  color: green;
+  color: var(--greenColorAlt);
 }
 #std div:last-child i {
-  color: red;
+  color: var(--redColorAlt);
 }
 /* END OFstatistics box*/
 /*START OF latest news*/
@@ -275,7 +244,7 @@
   font-size: 15px;
 }
 .count {
-  background-color: var(--secondMainColor);
+  background-color: var(--greyColorAlt);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -297,7 +266,7 @@
   padding: 5px 0;
 }
 .pDetail:not(:last-child) {
-  border-bottom: 1px solid var(--secondMainColor);
+  border-bottom: 1px solid var(--secondblueColorAlt);
 }
 .Detail {
   flex-grow: 1;
@@ -328,7 +297,7 @@
   align-items: center;
   width: 25px;
   height: 25px;
-  border: 2px solid var(--mainColor);
+  border: 2px solid var(--blueColorAlt);
   border-radius: 50%;
 }
 #progress li:not(:last-child) .outerC::after {
@@ -339,12 +308,12 @@
   width: 2px;
   height: 17px;
   transform: translateX(-50%);
-  background-color: var(--mainColor);
+  background-color: var(--blueColorAlt);
 }
 .innerC {
   width: 20px;
   height: 20px;
-  background-color: var(--mainColor);
+  background-color: var(--blueColorAlt);
   border-radius: 50%;
 }
 #special {
@@ -375,7 +344,7 @@
   transform: translateY(-50%);
 }
 #reminder div:nth-child(2):before {
-  background-color: var(--mainColor);
+  background-color: var(--blueColorAlt);
 }
 #reminder div:nth-child(3):before {
   background-color: rgba(0, 128, 0, 0.634);
@@ -395,24 +364,23 @@
   margin-bottom: 10px;
 }
 #reminder div:nth-child(2) {
-  border-left: 2px solid var(--mainColor);
+  border-left: 2px solid var(--blueColorAlt);
 }
 #reminder div:nth-child(3) {
-  border-left: 2px solid rgba(0, 128, 0, 0.634);
+  border-left: 2px solid var(--greenColorAlt);
 }
 #reminder div:nth-child(4) {
-  border-left: 2px solid rgba(255, 166, 0, 0.634);
+  border-left: 2px solid var(--orangeColorAlt);
 }
 #reminder div:nth-child(5) {
-  border-left: 2px solid rgba(255, 0, 0, 0.634);
+  border-left: 2px solid var(--redColorAlt);
 }
 /*END OF reminder*/
 /*START OF latest post*/
 .comment {
   border-style: solid;
   border-width: 1px;
-  border-color: var(--secondMainColor) transparent var(--secondMainColor)
-    transparent;
+  border-color: var(--greyColorAlt) transparent var(--greyColorAlt) transparent;
   width: calc(100% + 30px);
   transform: translateX(-15px);
   padding: 15px;
@@ -517,7 +485,7 @@
 /*END OF projects*/
 /*START OF projects*/
 #table {
-  background-color: var(--secondMainColor);
+  background-color: var(--greyColorAlt);
   width: 100%;
 }
 @media (max-width: 910px) {

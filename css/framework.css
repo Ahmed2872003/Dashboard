@@ -4,6 +4,9 @@ body,
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
 }
+.grandP {
+  min-height: 100vh;
+}
 p {
   font-size: 13px;
 }
@@ -16,9 +19,18 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+input,
+textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
 :root {
-  --mainColor: #006ff5;
-  --secondMainColor: rgb(238, 238, 238);
+  --pageColor: #f1f5fb;
+  --blueColorAlt: #006ff5;
+  --greenColorAlt: #2bb06b;
+  --orangeColorAlt: #f6a426;
+  --redColorAlt: #ff553c;
+  --greyColorAlt: rgb(238, 238, 238);
 }
 *::-webkit-scrollbar {
   width: 10px;
@@ -31,6 +43,27 @@ textarea:focus {
 }
 .grandP {
   display: flex;
+}
+.gap {
+  margin-bottom: 15px;
+}
+.box h2 {
+  font-weight: 800;
+}
+.mop {
+  margin-bottom: 5px;
+  opacity: 0.6;
+}
+.box {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 15px;
 }
 /* NAV */
 #nav {
@@ -103,7 +136,7 @@ textarea:focus {
 #nav .menu li:hover::before {
   left: 0;
 }
-@media (max-width: 570px) {
+@media (max-width: 769px) {
   #nav {
     width: 60px;
   }
@@ -119,6 +152,11 @@ textarea:focus {
   }
 }
 /* END OF NAV */
+/* second half*/
+.main main {
+  padding: 15px;
+}
+
 /*head*/
 .main {
   background-color: #f1f5fb;
@@ -208,7 +246,7 @@ textarea:focus {
   border-radius: 5px;
   border: none;
   color: white;
-  background-color: var(--mainColor);
+  background-color: var(--blueColorAlt);
   cursor: pointer;
 }
 /*End OF buttons*/

@@ -1,0 +1,44 @@
+/*START OF general info*/
+#inputs input {
+  display: block;
+  border: 1px solid var(--greyColorAlt);
+  width: 100%;
+}
+#inputs label {
+  font-size: 13px;
+}
+#inputs div {
+  display: flex;
+}
+#inputs div input {
+  background-color: var(--greyColorAlt);
+}
+.special {
+  background-color: white;
+  color: var(--blueColorAlt);
+}
+/*END OF general info*/
+/*START OF social info*/
+.info {
+  background-color: var(--greyColorAlt);
+  border-radius: 5px;
+  gap: 10px;
+  display: flex;
+}
+.info i {
+  color: #8d8c8d;
+  border-right: 1px solid #8d8c8d;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info p {
+  align-self: center;
+  opacity: 0.6;
+}
+.info:not(:last-child) {
+  margin-bottom: 10px;
+}
+/*END OF social info*/
