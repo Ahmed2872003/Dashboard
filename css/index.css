@@ -512,5 +512,45 @@
 /*START OF projects*/
 #wide {
   grid-column: 1/-1;
+  overflow: scroll;
+}
+/*END OF projects*/
+/*START OF projects*/
+#table {
+  background-color: var(--secondMainColor);
+  width: 100%;
+}
+@media (max-width: 910px) {
+  #table {
+    width: 1000px;
+  }
+}
+#table td {
+  background-color: white;
+  padding: 10px;
+}
+#table th {
+  text-align: start;
+  padding: 5px 10px;
+}
+
+.icons i {
+  display: inline-block;
+  width: 25px;
+  width: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+}
+.icons i:hover {
+  position: relative;
+}
+.icons i:not(:first-child) {
+  margin-left: -15px;
+}
+.stat p {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 /*END OF projects*/
