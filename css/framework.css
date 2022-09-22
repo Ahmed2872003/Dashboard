@@ -40,10 +40,10 @@ textarea {
   width: 10px;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #529af3;
+  background-color: var(--blueColorAlt);
 }
 *::-webkit-scrollbar-thumb:hover {
-  background-color: var(--mainColor);
+  background-color: #0066e3;
 }
 .grandP {
   display: flex;
