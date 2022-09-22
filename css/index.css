@@ -265,6 +265,10 @@
   gap: 20px;
   padding: 5px 0;
 }
+.pDetail i {
+  color: var(--redColorAlt);
+  font-size: 30px;
+}
 .pDetail:not(:last-child) {
   border-bottom: 1px solid var(--secondblueColorAlt);
 }

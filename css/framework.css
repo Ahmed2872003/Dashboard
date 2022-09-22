@@ -14,10 +14,14 @@ input,
 textarea {
   border: none;
   caret-color: gray;
+  border: 1px solid var(--greyColorAlt);
 }
 input:focus,
 textarea:focus {
   outline: none;
+}
+textarea {
+  resize: none;
 }
 input,
 textarea {
@@ -30,7 +34,7 @@ textarea {
   --greenColorAlt: #2bb06b;
   --orangeColorAlt: #f6a426;
   --redColorAlt: #ff553c;
-  --greyColorAlt: rgb(238, 238, 238);
+  --greyColorAlt: #e6e6e6;
 }
 *::-webkit-scrollbar {
   width: 10px;
@@ -43,9 +47,6 @@ textarea {
 }
 .grandP {
   display: flex;
-}
-.gap {
-  margin-bottom: 15px;
 }
 .box h2 {
   font-weight: 800;

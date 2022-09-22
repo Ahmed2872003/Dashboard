@@ -80,10 +80,27 @@
                 Settings
             </h1>
             <div class="parent">
-              <div class="box"></div>
+              <!--c-->
+              <div class="box">
+                <h2 >Site Control</h2>
+                <p class="mop">Control The Website If There Is Maintenance</p>
+                <div class="choice">
+                  <div>
+                    <h5>Website Control</h5>
+                    <p style="opacity:.6;">Open/Close Website And Type The Reason</p>
+                  </div>
+                  <label for="op_website" class="roundedSwitch">
+                    <input type="checkbox" id="op_website">
+                    <span class="slider"></span>
+                    <div class="color"></div>
+                  </label>
+                </div>
+                <textarea  cols="30" rows="10" placeholder="Why you closed it?" id="cMessage" style="margin-top:20px;"></textarea>
+              </div>
+              <!--END OF site control-->
               <!--START OF general info-->
               <div class="box">
-                <h2 class="gap">
+                <h2 >
                   General Info
                 </h2>
                 <p class="mop">
@@ -102,10 +119,40 @@
                 </form>
               </div>
               <!--END OF general info-->
-              <div class="box"></div>
+              <!--START OF security info-->
+              <div class="box">
+                <h2 >Security Info</h2>
+                <p class="mop">Security Information About Your Account</p>
+                <div class="securitySettings">
+                  <div>
+                    <h5>Password</h5>
+                    <p style="opacity:.6;">Last Change On 25/10/2021</p>
+                  </div>
+                  <button class="s-btn-c-blue" class="special">Change</button>
+                </div>
+                <div class="securitySettings">
+                  <div>
+                    <h5>Two-Factor Authentication</h5>
+                    <p style="opacity:.6;">Enable/Disable The Feature</p>
+                  </div>
+                  <label for="securityFeature" class="roundedSwitch">
+                    <input type="checkbox" id="securityFeature">
+                    <span class="slider"></span>
+                    <div class="color"></div>
+                  </label>
+                </div>
+                <div class="securitySettings">
+                  <div>
+                    <h5>Devices</h5>
+                    <p style="opacity:.6;">Check The Login Devices List</p>
+                  </div>
+                  <button class="s-btn-c-blue" style="background-color: var(--greyColorAlt);color:black">Devices</button>
+                </div>
+              </div>
+              <!--END OF security info-->
               <!--START OF social info-->
               <div class="box">
-                <h2 class="gap">Social Info</h2>
+                <h2 >Social Info</h2>
                 <p class="mop">Social Media Information</p>
                 <div class="info">
                   <i class="fa-brands fa-twitter"></i>
@@ -127,13 +174,13 @@
               <!--END OF social info-->
               <!--START OF widgets control-->
               <div class="box">
-                <h2 class="gap">
+                <h2 >
                   Widgets Control
                 </h2>
                 <p class="mop">
                   Hide/Show Website Widgets
                 </p>
-                <form action="">
+                <form action="" id="editCB">
                   <input type="checkbox" id="quick">
                   <label for="quick">Quick Drafts</label><br>
                   <input type="checkbox" id="targets">
@@ -146,12 +193,30 @@
                   <label for="IT">Latest Tasks</label><br>
                   <input type="checkbox" id="TSI">
                   <label for="TSI">Top Search items</label>
-                  
-                  
                 </form>
               </div>
               <!--END OF widjets control-->
-              <div class="box"></div>
+              <div class="box backup">
+                <h2 >Backup Manager</h2>
+                <p class="mop">Control Backup Date And Location</p>
+                <form action="">
+                  <input type="radio" id="daily" name="BP_duration" value="daily">
+                  <label for="daily">Daily</label><br/>
+                  <input type="radio" id="Weekly" name="BP_duration" value="weekly">
+                  <label for="Weekly">Weekly</label><br/>
+                  <input type="radio" id="Monthly" name="BP_duration" value="monthly">
+                  <label for="Monthly">Monthly</label>
+                </form>
+                <hr>
+                <form action="">
+                  <input type="radio" id="Megaman" name="BP_method" value="Megaman">
+                  <label for="Megaman"><i class="fa-solid fa-server"></i>Megaman</label>
+                  <input type="radio" id="Zero" name="BP_method" value="Zero">
+                  <label for="Zero"><i class="fa-solid fa-server"></i>Zero</label>
+                  <input type="radio" id="Sigma" name="BP_method" value="Sigma">
+                  <label for="Sigma"><i class="fa-solid fa-server"></i>Sigma</label>
+                </form>
+              </div>
             </div>
           </main>
           </div>
