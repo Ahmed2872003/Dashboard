@@ -243,15 +243,7 @@
 .detail p:first-child {
   font-size: 15px;
 }
-.count {
-  background-color: var(--greyColorAlt);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-  font-size: 10px;
-}
+
 /*END OF top search items*/
 /*START OF latest uploads*/
 

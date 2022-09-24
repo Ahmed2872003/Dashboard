@@ -4,57 +4,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.roundedSwitch {
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 30px;
-  transition: 0.3s;
-}
-.color {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: var(--greyColorAlt);
-}
-.roundedSwitch input {
-  display: none;
-}
-.slider::before {
-  content: "\f00d";
-  font-family: FontAwesome;
-  color: var(--greyColorAlt);
-}
-.slider {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 2px;
-  background-color: white;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.roundedSwitch input:checked + .slider {
-  left: calc(100% - 27px);
-}
-.roundedSwitch input:checked + .slider::before {
-  content: "\f00c";
-  color: var(--blueColorAlt);
-}
-.roundedSwitch input:checked + .slider + .color {
-  background-color: var(--blueColorAlt);
-}
+
 #cMessage {
   display: block;
   height: 120px;

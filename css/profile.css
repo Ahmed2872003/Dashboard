@@ -1,0 +1,136 @@
+/*START OF personal information*/
+#wide {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+#wide > div:not(#info) {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#info {
+  text-align: center;
+  padding: 20px 50px;
+}
+@media (max-width: 1460px) {
+  #wide {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  #wide {
+    flex-direction: column;
+  }
+}
+
+#info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#info > p {
+  font-size: 10px;
+}
+#color::before {
+  width: 80%;
+  background-color: var(--blueColorAlt);
+}
+#color {
+  background-color: var(--greyColorAlt);
+  margin: 10px 0;
+}
+#stars {
+  display: flex;
+  justify-content: center;
+}
+#stars i {
+  color: var(--orangeColorAlt);
+  width: calc(100% / 5);
+}
+#showInfo {
+  flex-grow: 1;
+  transition: 0.3s;
+  padding: 15px;
+}
+#showInfo:not(:last-child) {
+  border-bottom: 1px solid var(--greyColorAlt);
+}
+.editInfo {
+  margin: 7px 0;
+}
+#showInfo:hover {
+  background-color: #f9f9f9;
+}
+.editInfo > span {
+  margin-right: 100px;
+}
+#persInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+#persInfo > span {
+  width: 300px;
+}
+@media (max-width: 767px) {
+  #persInfo > span {
+    width: 100%;
+  }
+}
+/*END OF personal information*/
+/*START OF my skills*/
+#skills > * {
+  padding: 5px 0;
+}
+#skills > *:not(:last-child) {
+  border-bottom: 1px solid var(--greyColorAlt);
+}
+/*END OF my skills*/
+/*START OF latest activities*/
+#twoThird {
+  grid-column: 2/-1;
+}
+@media (max-width: 1044px) {
+  #twoThird {
+    grid-column: 1/1;
+  }
+}
+.activitie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+#activities .activitie:not(:last-child) {
+  border-bottom: 1px solid var(--greyColorAlt);
+}
+.activitie i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+#activities .activitie:first-child i,
+#activities .activitie:last-child i {
+  background-color: #27abc0;
+  color: white;
+}
+#activities .activitie:nth-child(2) i {
+  background-color: var(--redColorAlt);
+  color: white;
+}
+#activities .activitie:nth-child(3) i {
+  color: white;
+  background-color: var(--blueColorAlt);
+}
+
+.activitieInfo {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+/*END OF latest activities*/

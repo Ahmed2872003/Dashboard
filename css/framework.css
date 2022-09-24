@@ -4,6 +4,21 @@ body,
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
 }
+.s-w {
+  font-weight: 500;
+}
+.bm-w {
+  font-weight: 600;
+}
+.m-w {
+  font-weight: 700;
+}
+.h-w {
+  font-weight: 800;
+}
+.s-op {
+  opacity: 0.6;
+}
 .grandP {
   min-height: 100vh;
 }
@@ -251,3 +266,80 @@ textarea {
   cursor: pointer;
 }
 /*End OF buttons*/
+/*START OF Toggle button*/
+.roundedSwitch {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  transition: 0.3s;
+}
+.color {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: var(--greyColorAlt);
+}
+.roundedSwitch input {
+  display: none;
+}
+.slider::before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  color: var(--greyColorAlt);
+}
+.slider {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 2px;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.roundedSwitch input:checked + .slider {
+  left: calc(100% - 27px);
+}
+.roundedSwitch input:checked + .slider::before {
+  content: "\f00c";
+  color: var(--blueColorAlt);
+}
+.roundedSwitch input:checked + .slider + .color {
+  background-color: var(--blueColorAlt);
+}
+/*END OF Toggle button*/
+/*START OF percentage lins*/
+.path::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.path {
+  position: relative;
+  height: 5px;
+}
+/*END OF percentage lins*/
+/*radius box*/
+.count {
+  background-color: var(--greyColorAlt);
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 10px;
+}
+/*radius box*/
