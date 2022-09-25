@@ -1,0 +1,44 @@
+.parent {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .parent {
+    justify-content: center;
+  }
+}
+.box {
+  position: relative;
+  padding: 0;
+}
+.box > *:not(img) {
+  padding: 15px;
+}
+.box i:nth-child(2) {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  padding: 15px;
+  border: 1px solid white;
+  color: white;
+}
+.box img {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 225px;
+}
+.stats {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--greyColorAlt);
+  margin-top: 20px;
+}
+.stats button {
+  position: absolute;
+  left: 50%;
+  top: -12.5px;
+  transform: translateX(-50%);
+  bottom: 100%;
+}
