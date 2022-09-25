@@ -98,12 +98,23 @@
 }
 .activitie {
   display: flex;
-  align-items: center;
   gap: 10px;
   padding: 10px 0;
 }
-#activities .activitie:not(:last-child) {
+.activitie i {
+  align-self: center;
+}
+.activitie #activities .activitie:not(:last-child) {
   border-bottom: 1px solid var(--greyColorAlt);
+}
+@media (max-width: 767px) {
+  .activitie {
+    flex-direction: column;
+  }
+  .activitieInfo {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .activitie i {
   display: flex;

@@ -1,0 +1,99 @@
+.icons {
+  margin: 20px 0;
+}
+.icons i {
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.icons i:hover {
+  position: relative;
+}
+.icons i:not(:first-child) {
+  margin-left: -15px;
+}
+.icons + div {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  border-top: 1px solid var(--greyColorAlt);
+  border-bottom: 1px solid var(--greyColorAlt);
+  padding: 5px 0;
+  text-align: end;
+  margin: 10px 0;
+}
+@media (max-width: 767px) {
+  .icons + div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price div::before {
+  border-radius: 5px;
+}
+.price div {
+  border-radius: 5px;
+  background-color: var(--greyColorAlt);
+  width: 60%;
+}
+.one div::before {
+  background-color: var(--redColorAlt);
+  width: 40%;
+}
+.two div::before {
+  background-color: var(--greenColorAlt);
+  width: 80%;
+}
+.three div::before {
+  background-color: var(--blueColorAlt);
+  width: 100%;
+}
+.four div::before {
+  background-color: var(--greenColorAlt);
+  width: 60%;
+}
+.five div::before {
+  background-color: var(--greenColorAlt);
+  width: 70%;
+}
+.six div::before {
+  background-color: var(--redColorAlt);
+  width: 45%;
+}
+.seven div::before {
+  background-color: var(--greenColorAlt);
+  width: 70%;
+}
+.eight div::before {
+  background-color: var(--redColorAlt);
+  width: 60%;
+}
+.nine div::before {
+  background-color: var(--greenColorAlt);
+  width: 80%;
+}
+
+.three div::before {
+  background-color: var(--blueColorAlt);
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .price {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .price div {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .price p {
+    align-self: center;
+  }
+}
