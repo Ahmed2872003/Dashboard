@@ -1,0 +1,46 @@
+.box > i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  background-color: var(--greyColorAlt);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.friendInfo {
+  text-align: center;
+}
+.friendInfo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.friendInfoTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--greyColorAlt);
+  border-bottom: 1px solid var(--greyColorAlt);
+  margin: 10px 0;
+  height: 133.2px;
+}
+.friendInfoTwo > div div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.special {
+  font-size: 70px;
+  color: var(--orangeColorAlt);
+}
+
+.buttons button:nth-child(2) {
+  background-color: var(--redColorAlt);
+}
+.operations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
