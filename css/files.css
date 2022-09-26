@@ -1,0 +1,70 @@
+.parent {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 70%;
+}
+.box {
+  padding: 10px;
+}
+.box > p {
+  margin: 5px 0;
+}
+.box i {
+  color: #a9a9a9;
+}
+.fileType {
+  text-align: center;
+}
+.fileType img {
+  width: 80px;
+  height: 80px;
+}
+.fileDetail {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--greyColorAlt);
+}
+.split {
+  display: flex;
+  gap: 20px;
+}
+#fileStat {
+  width: 30%;
+  height: 30%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .split {
+    flex-wrap: wrap-reverse;
+  }
+  .parent,
+  #fileStat {
+    width: 100%;
+  }
+}
+#fileStat > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+#fileStat > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+#fileStat > div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+#fileStat > div > div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

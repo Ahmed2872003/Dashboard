@@ -224,8 +224,10 @@ textarea {
   align-items: center;
   gap: 15px;
 }
-.head input:focus {
-  width: 250px;
+@media (min-width: 360px) {
+  .head input:focus {
+    width: 200px;
+  }
 }
 .head .ntf span:first-child::before {
   content: "";
